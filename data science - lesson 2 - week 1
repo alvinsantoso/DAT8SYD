@@ -1,0 +1,7 @@
+data science - lesson 2 - week 1
+
+configure the upstream source repo to get updates from
+
+configure your local clone (copy) of the repository to point to the official course repository to source regular updates from
+git remote -v
+git remote add upstream https://github.com/DAT8SYD/DAT8SYD.git
