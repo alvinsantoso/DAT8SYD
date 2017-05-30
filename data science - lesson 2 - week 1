@@ -5,3 +5,148 @@ configure the upstream source repo to get updates from
 configure your local clone (copy) of the repository to point to the official course repository to source regular updates from
 git remote -v
 git remote add upstream https://github.com/DAT8SYD/DAT8SYD.git
+
+
+commit
+add single file > git add <filename>
+add all "red" files: git add .
+> git commit -m "message about to commit" (you can put comment for anything you like under double quote)
+
+asantoso-m02:git_GA asantoso$ git clone https://github.com/alvinsantoso/DAT8SYD.git
+Cloning into 'DAT8SYD'...
+remote: Counting objects: 146, done.
+remote: Compressing objects: 100% (125/125), done.
+remote: Total 146 (delta 19), reused 143 (delta 16), pack-reused 0
+Receiving objects: 100% (146/146), 56.35 MiB | 421.00 KiB/s, done.
+Resolving deltas: 100% (19/19), done.
+asantoso-m02:git_GA asantoso$ git config --global asantoso "alvin santoso"
+error: key does not contain a section: asantoso
+asantoso-m02:git_GA asantoso$ git config --global alvinsantoso "alvin santoso"
+error: key does not contain a section: alvinsantoso
+asantoso-m02:git_GA asantoso$ git config --global alvinsantoso
+error: key does not contain a section: alvinsantoso
+asantoso-m02:git_GA asantoso$ git config --global alv.santoso@gmail.com
+asantoso-m02:git_GA asantoso$ git config --global user.name alvinsantoso
+asantoso-m02:git_GA asantoso$ pwd
+/Users/asantoso/git_GA
+asantoso-m02:git_GA asantoso$ ls
+DAT8SYD
+asantoso-m02:git_GA asantoso$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+asantoso-m02:git_GA asantoso$ cd DAT8SYD/
+asantoso-m02:DAT8SYD asantoso$ ls
+README.md		data			images			labs			project-examples	slides
+asantoso-m02:DAT8SYD asantoso$ git remove -v
+git: 'remove' is not a git command. See 'git --help'.
+
+Did you mean this?
+	remote
+asantoso-m02:DAT8SYD asantoso$ git remote -v
+origin	https://github.com/alvinsantoso/DAT8SYD.git (fetch)
+origin	https://github.com/alvinsantoso/DAT8SYD.git (push)
+asantoso-m02:DAT8SYD asantoso$ git remote add upstream https://github.com/DAT8SYD/DAT8SYD.git
+asantoso-m02:DAT8SYD asantoso$ git remote -v
+origin	https://github.com/alvinsantoso/DAT8SYD.git (fetch)
+origin	https://github.com/alvinsantoso/DAT8SYD.git (push)
+upstream	https://github.com/DAT8SYD/DAT8SYD.git (fetch)
+upstream	https://github.com/DAT8SYD/DAT8SYD.git (push)
+asantoso-m02:DAT8SYD asantoso$ ls
+README.md		data			images			labs			project-examples	slides
+asantoso-m02:DAT8SYD asantoso$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	data science - lesson 2 - week 1
+
+nothing added to commit but untracked files present (use "git add" to track)
+asantoso-m02:DAT8SYD asantoso$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+	add
+asantoso-m02:DAT8SYD asantoso$ git add .
+asantoso-m02:DAT8SYD asantoso$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .DS_Store
+	new file:   data science - lesson 2 - week 1
+
+asantoso-m02:DAT8SYD asantoso$ git commit -m "message about to commit"
+[master dc2f9de] message about to commit
+ 2 files changed, 7 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 data science - lesson 2 - week 1
+asantoso-m02:DAT8SYD asantoso$ ls
+README.md				data science - lesson 2 - week 1	labs					slides
+data					images					project-examples
+asantoso-m02:DAT8SYD asantoso$ cd labs
+asantoso-m02:labs asantoso$ ls
+Week 1 Lesson 2
+asantoso-m02:labs asantoso$ cd Week\ 1\ Lesson\ 2/
+asantoso-m02:Week 1 Lesson 2 asantoso$ ls
+Lab 1 - Numpy and Pandas.ipynb	u.data				u.item				u.user
+asantoso-m02:Week 1 Lesson 2 asantoso$ cd ..
+asantoso-m02:labs asantoso$ cd ..
+asantoso-m02:DAT8SYD asantoso$ git checkout master
+M	.DS_Store
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+asantoso-m02:DAT8SYD asantoso$ git fetch upstream
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 4 (delta 3), reused 4 (delta 3), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/DAT8SYD/DAT8SYD
+ * [new branch]      master     -> upstream/master
+asantoso-m02:DAT8SYD asantoso$ git merge upstream/master
+Merge made by the 'recursive' strategy.
+ slides/Data Science Week 1 Lesson 2 - Thursday 25 May - Git.key | Bin 6383350 -> 6384789 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
