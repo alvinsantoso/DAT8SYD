@@ -1,0 +1,30 @@
+week 2 lesson 2
+
+SUPERVISED LEARNING = achieve something which the algorithm gives some kind of error/adjustment/measurement to improve the model
+to predict something (who will win a macth, predict weather, what customer wants, the value of a stock)
+Regression : if the target variable is numeric then we have a regression problem - we are trying to predict a continous number
+Classification : if the target variable is category then we have a classification problem - we are trying to classify what group that y belongs to (for example trying to predict a type of flower)
+the data values that provide information to help guess the target . The Features may also be called Predictor variables, Independent variables
+
+UNSUPERVISED LEARNING = find structure in data, such as clusters. We want to find relationship in the data (do Clusters for e.g.)
+
+http://projector.tensorflow.org/
+
+Linear Regression (LR) = We want to model Linear relationship (think straight line) between our target variable y and our input variable x
+y = XB+E
+
+y=target variable
+X=input variable
+B (beta) = coefficients
+E (epsilon) = error term
+
+Example - predict the price of a house based on some observed data we have about the area, no of bedrooms, size of the house, has pool or not - the goal is a function y=f(X), to describe the house proce based on observed data
+
+y = house price ($)
+X's = area (x1), no of bedrooms (x2), size of the house (x3), Has pool or not (x4)
+
+check out = Anscombe's Quartet
+Linear Regression - important step = make sure you visualise data to see whether the model fits / acceptable or not!!
+
+Multiple Linear 
+using multiple Coefficient to weight the level of impact you have on your model. Coefficient basically determines Hog big the impact is towards your model, for example predict the price of a house(y), the coefficents can be Bathroom (B1), House Size (B2), Crime Index (B3)
