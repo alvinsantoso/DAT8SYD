@@ -1,0 +1,29 @@
+Data science week 3 lesson 3
+Test set approach, how can we make a model that generalizes well?
+1. split dataset
+2. train model
+3. test model
+4. parameter tuning
+5. choose best model
+6. train on all data
+
+Bias - Variance - Tradeoff (laymen terms)=
+A person with high bias is someone who starts to answer before you can even finish asking. A person with high variance is someone who can think of all sorts of crazy answers. Combining these gives you different personalities:
+
+- High bias/low variance: this is someone who usually gives you the same answer, no matter what you ask, and is usually wrong about it;
+
+- High bias/high variance: someone who takes wild guesses, all of which are sort of wrong;
+
+- Low bias/high variance: a person who listens to you and tries to answer the best they can, but that daydreams a lot and may say something totally crazy;
+
+- Low bias/low variance: a person who listens to you very carefully and gives you good answers pretty much all the time.
+
+
+Cross Validation = a method to dealing the issues of bias-variance-tradeoff
+
+https://insidebigdata.com/2014/10/22/ask-data-scientist-bias-vs-variance-tradeoff/
+https://www.quora.com/What-is-the-best-way-to-explain-the-bias-variance-trade-off-in-layman%E2%80%99s-terms
+https://monkeylearn.com/blog/a-gentle-guide-to-machine-learning/
+
+Precision, Recall and F1 Scores
+https://chrisalbon.com/machine-learning/precision_recall_and_F1_scores.html

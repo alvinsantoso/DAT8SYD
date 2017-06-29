@@ -1,0 +1,19 @@
+data science week 4 lesson 2
+unsupervised learning = trying to find structure of your data because the data itself doesnt really have a correlate relationship between 1 value to another (multidimensional data)
+
+Clustering = grouping set of data based on similar attributes to find unknown relationship within the data set. for e.g. Fraud transactional in finance
+
+K-Means = 
+
+how do we know if clusters are any good = compare Cohesion and Separation
+Cohesion = within 1 cluster, how clustered are each points within that 1 cluster(how effectives within 1 cluster)
+Separation = how far and apart betwwen 1 cluster to another (how effectives between clusters)
+in general we want separation to be high and cohesion to be low
+
+basically cluster validation requires intuition of human nature to inspect the result
+
+k-means popular because it's computational efficiency, simple algorithm and intuitive nature.
+
+weaknesses = not suitable to deal for data with widely varying shapes and densities (picture, geospatial map)
+
+generally k-means always range in the low value (1-10)
