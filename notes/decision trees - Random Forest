@@ -1,0 +1,21 @@
+decision trees - Random Forest
+
+machine learning important program = master Random Forest and Linear Regression first
+
+decision tree = simplified model / complicated model which then can be communicated to people with a clear visualisation; Good for supervised segmentation (for e.g. visualise which customer variable responded to a campaign, Male A30-35)
+
+decision tree Cons = prone to overfitting (the trees goes to deep); predictive power is lower in comparison to many other modern techniques
+
+Decision trees can suffer from high variance which makes their results fragile to the specific training data used. 
+
+(check Bias Variance Tradeoff) - complexity vs accuracy
+constant fight in real world problem where Training set with High model complexity generally will resulting in Low model prediction error, HOWEVER the Test set data would show the opposite results where generally the higher model complexity is the Test data will resulting in High model prediction error
+
+Ensemble models strategies
+Typically packaged ensemble methods = Bagging, Boosting
+Typically manually applied ensemble methods = voting, averaging, rank averaging, stacking, blending
+
+Bagging 
+Bootstrapped aggregation = Bagging
+
+Random Forest
