@@ -1,4 +1,6 @@
-decision trees - Random Forest
+decision trees 
+
+Random Forest
 
 machine learning important program = master Random Forest and Linear Regression first
 
@@ -18,4 +20,4 @@ Typically manually applied ensemble methods = voting, averaging, rank averaging,
 Bagging 
 Bootstrapped aggregation = Bagging
 
-Random Forest
+Random Forest = ensemble approach method which work well with Decision Trees methodology
